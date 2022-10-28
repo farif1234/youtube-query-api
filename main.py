@@ -4,12 +4,12 @@ app = Flask(__name__)
 
 
 def urlMaker(query: str):
-    # check if query is string
-
+    # print(query)
+    # characters not encoded = [@,#,$,%,&,=,+,;,:,,,?,/]
     url = f"https://www.youtube.com/results?search_query={query.replace(' ', '+')}"
     return url
 
 
-@app.get('/<query>')
+@app.get('/youtube/<query>')
 def getURL(query):
     return urlMaker(query)
