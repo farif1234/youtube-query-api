@@ -1,8 +1,10 @@
 # Youtube/Spotify Query API
 
-This project is a REST API designed to translate text into Youtube or Spotify search URLs. Made with Flask.
+This project is a REST API designed to translate text into Youtube or Spotify search URLs. 
 
 *e.g. 'Michael Jackson' -> 'https://www.youtube.com/results?search_query=michael+jackson'*
+
+This API was made with Flask and hosted using Heroku.
 
 
 

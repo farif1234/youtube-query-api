@@ -24,3 +24,6 @@ def getYtURL(query):
 def getSpURL(query):
     print(f"Received: {query}")
     return spotifyQuery(query)
+
+
+# https://youtube-query-api.herokuapp.com/:service/:text
