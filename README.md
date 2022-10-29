@@ -58,5 +58,6 @@ To run this program on your local machine, do the following:
     ```
 5. Run app
     ```console
+    export FLASK_APP=main.py
     flask run
     ```
