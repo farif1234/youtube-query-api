@@ -4,7 +4,6 @@ app = Flask(__name__)
 
 
 def youtubeQuery(query: str):
-    # print(query)
     # characters not encoded = [@,#,$,%,&,=,+,;,:,,,?,/]
     url = f"https://www.youtube.com/results?search_query={query.replace(' ', '+')}"
     return url
@@ -17,9 +16,11 @@ def spotifyQuery(query: str):
 
 @app.get('/youtube/<query>')
 def getYtURL(query):
+    print(f"Received: {query}")
     return youtubeQuery(query)
 
 
 @app.get('/spotify/<query>')
 def getSpURL(query):
+    print(f"Received: {query}")
     return spotifyQuery(query)
