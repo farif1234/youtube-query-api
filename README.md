@@ -1,6 +1,6 @@
 # Youtube/Spotify Query API
 
-This project is a REST API designed to translate text into Youtube or Spotify search URLs. 
+This project is a REST API designed to translate text into Youtube or Spotify search URLs. Made with Flask.
 
 *e.g. 'Michael Jackson' -> 'https://www.youtube.com/results?search_query=michael+jackson'*
 
@@ -36,4 +36,27 @@ print(response2.text) # https://open.spotify.com/search/hotline%20bling
 
 ## UML
 
+![UML](assets/api_uml.png)
+
 ## Run locally
+
+To run this program on your local machine, do the following:
+
+1. Clone repo, then cd into directory
+2. Create virtual environment
+
+    ```console
+    python -m venv venv
+    ```
+3. Activate virtual environment
+    ```console
+    . venv/bin/activate
+    ```
+4. Install required packages
+    ```console
+    pip install -r requirements.txt
+    ```
+5. Run app
+    ```console
+    flask run
+    ```
