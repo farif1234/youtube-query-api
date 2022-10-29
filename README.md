@@ -8,7 +8,7 @@ This project is a REST API designed to translate text into Youtube or Spotify se
 
 ## Requesting Data
 
-The API can be called at https://youtube-query-api.herokuapp.com/<service>/<text>. 
+The API can be called at https://youtube-query-api.herokuapp.com/\<service>/\<text>. 
 
 The user can communciate the choice between a Youtube or Spotify 
 URL and the text to be translated as path parameters. An example call is https://youtube-query-api.herokuapp.com/spotify/adele.
